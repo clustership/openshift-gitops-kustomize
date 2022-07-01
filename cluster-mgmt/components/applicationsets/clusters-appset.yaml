@@ -7,7 +7,7 @@ spec:
   generators:
   - git:
       repoURL: https://github.com/clustership/openshift-gitops-kustomize
-      revision: main
+      revision: remove-vault
       directories:
       - path: cluster-mgmt/clusters/overlays/*
   template:
@@ -27,7 +27,7 @@ spec:
             maxDuration: 5m
       source:
         repoURL: https://github.com/clustership/openshift-gitops-kustomize
-        targetRevision: main
+        targetRevision: remove-vault
         path: '{{path}}'
         plugin:
           name: argocd-vault-plugin-kustomize
