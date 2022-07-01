@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/natifridman/openshift-gitops-kustomize
+      repoURL: https://github.com/clustership/openshift-gitops-kustomize
       revision: main
       directories:
       - path: cluster-mgmt/clusters/overlays/*
@@ -26,7 +26,7 @@ spec:
             factor: 2
             maxDuration: 5m
       source:
-        repoURL: https://github.com/natifridman/openshift-gitops-kustomize
+        repoURL: https://github.com/clustership/openshift-gitops-kustomize
         targetRevision: main
         path: '{{path}}'
         plugin:
