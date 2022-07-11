@@ -27,7 +27,7 @@ spec:
             maxDuration: 5m
       source:
         repoURL: https://github.com/clustership/openshift-gitops-kustomize
-        targetRevision: remove-vault
+        targetRevision: main
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
