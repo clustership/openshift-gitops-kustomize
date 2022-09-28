@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: dnsimple-test
+  namespace: cert-tests
+spec:
+  dnsNames:
+    - api.ipi-bm-demo02.clustership.com
+  issuerRef:
+    name: cert-manager-webhook-dnsimple-staging
+    kind: ClusterIssuer
+  secretName: dnsimple-test-tls
